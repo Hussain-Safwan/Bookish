@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title> Login </title>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBzAbhWOZO4G_viKEqdrh7t2xLjPr_Mr_U",
+    authDomain: "bookish-190e8.firebaseapp.com",
+    databaseURL: "https://bookish-190e8.firebaseio.com",
+    projectId: "bookish-190e8",
+    storageBucket: "bookish-190e8.appspot.com",
+    messagingSenderId: "799934830243"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    <script src="js/js_script1.js"></script>
+    <link rel="stylesheet" type="text/css" href="login_style.css">   
+</head>
+    <body>
+    <div class="login-box">
+    <img src="avatar.png" class="avatar">
+        <h1>Login Here</h1>
+            <form>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Login">
+            <a href="#">Forgot Password?</a>    
+            </form>
+        
+        
+        </div>
+    
+    </body>
+</html>

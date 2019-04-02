@@ -1,0 +1,363 @@
+body{
+    /* background: url('home_bg.jpg') no-repeat fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: serif
+}
+
+/* 
+.bg {
+    background-image: url("home_bg.jpg");
+  
+    height: 350px;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+
+  .cover{
+    width: 1840px;
+    height: 300px;
+  }
+
+  .topnav {
+    
+    background-image: linear-gradient(to right, #666666, white);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 50px;
+    width: 1840px;
+  }
+
+  .topnav i{
+    padding: 14px 20px;
+    color: white;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .topnav i:hover{
+    transform: scale(1.5);
+  }
+  
+  .topnav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    line-height: 50px;
+    margin-left: 0px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.5);
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    width: 320px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 560px;
+    font-size: 17px;
+  }
+
+  .topnav b.login{
+      margin-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: bold;
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+  }
+  
+
+  .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    height: 500px;
+    display: none;
+    position: absolute;
+    width: 680px;
+    right: 30%;
+    bottom: 25%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    opacity: 0.8;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    margin-top: 20px;
+    width: 600px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    margin-left: 10px;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  .form-container img.acc_img{
+      margin-left: 240px;
+      height: 180px;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    width: 600px;
+    margin-left: 185px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .vertical-menu {
+    margin-right: 70px;
+    margin-top: 70px;
+    float: right;
+    width: 400px; 
+  }
+  
+  .vertical-menu p {
+    background-image: linear-gradient(to right, #666666, white);
+
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
+    
+  }
+
+  .vertical-menu a{
+    text-align: center;
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 35px;
+    font-size: 22px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+  .postPallette{
+    background-color: white;
+    width: 900px;
+    height: 200px;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 60px;
+    position: relative ;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.postPallette:hover{
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.postPallette img.acc{
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.postPallette img.acc:hover{
+  transform: scale(1.2);
+}
+
+.book{
+  opacity: 1;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: black;
+}
+
+.author{
+  opacity: 1;
+  margin-left: 90px;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: grey;
+
+}
+
+.price{
+  opacity: 1;
+  margin-left: 90px;
+  margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+.user{
+  margin-left: 400px;
+  font-size: 15px;
+}
+
+.user :hover{
+  transform: scale(1.1);
+}
+
+a{
+  margin-top: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  text-decoration: none; 
+}
+
+.postPallette b.name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 18px; 
+    color: #383737;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 175px;
+    margin-right: 100px;
+    border-style: inset;
+    border-width: 0.5px;
+  }
+
+.editButton{
+    border-radius: 15px 15px 15px 15px;
+    color:black;
+    opacity: 1;
+    margin-left: 750px;
+    margin-top: 0px;
+    width: 120px;
+    height: 50px;
+}
+
+.editButton :hover{
+  background-color: grey;
+  color: rgb(54, 54, 54);
+}
+
+.fullpost{
+    background-color: white;
+    width: 900px;
+    height: 800px;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 60px;
+    position: relative ;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);  
+}
+
+.post_img{
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 20px;
+  vertical-align: text-bottom;
+  float: left;
+}
+
+.imgdiv{
+  height: 800px;
+  margin-top: 0px;
+  width: 240px;
+  margin-left: 0px;
+  background-color: rgb(238, 234, 234);
+  float: left;
+}
+.bookauth{
+  float: right;
+  margin-top: 200px;
+}
+.bookname{
+  margin-right: 60px;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  float: right;
+}
+
+
+
+.topic{
+  float: right;
+  margin-top: 120px;
+}

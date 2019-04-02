@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title> Sign Up </title>
+    <link rel="stylesheet" type="text/css" href="signup_style.css">   
+</head>
+
+<body>
+    <div class="signup-box">
+
+        <p>Name</p>
+        <input type="text" ID = "name" placeholder="Full name">
+        <p>Username</p>
+        <input type="text" ID = "username" placeholder="user_name">
+        <p>Email</p>
+        <input type="text" ID = "email" placeholder="example@mail.com">
+        <p>Phone</p>
+        <input type="text" ID = "phone" placeholder="0123456789">
+        <p>Default Address</p>
+        <input type="text" ID = "address" placeholder="Shahbag, Dhaka">
+        <p>Password</p>
+        <input type="password" id = "password" placeholder="Password">
+        <p class="check"><small><input type="checkbox" ID = "check" value="Bike"> Agreed to the <a href="#" >Terms and Conditions</a> of the page</br></small></p>
+        <p></br></p>
+        <input type="submit" ID = "submit" value="Sign Up" onclick="signup_click()">
+        <p> <small> Have an account?
+        <a href="#">Login</a> </small>  </p>  
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBzAbhWOZO4G_viKEqdrh7t2xLjPr_Mr_U",
+        authDomain: "bookish-190e8.firebaseapp.com",
+        databaseURL: "https://bookish-190e8.firebaseio.com",
+        projectId: "bookish-190e8",
+        storageBucket: "bookish-190e8.appspot.com",
+        messagingSenderId: "799934830243"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+    <script type="text/javascript" src="JavaScript/sign_up.js"></script>
+
+</body>
+</html>

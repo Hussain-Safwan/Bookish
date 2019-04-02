@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sell Books</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="CSS/sell_style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="icon" href="Images/main_icon.png">
+<script type="text/javascript" src="JavaScript/sell_script.js"></script>   
+
+
+<body>
+
+    <!-- -------------------------------- Main section ------------------------------------ -->
+    
+    <div class="topnav">
+            <div id="the_nav" class="text">
+            <span class="bars" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+            <a href="index.html"><img class="logo" src="Images/logo_cropped.png"></a>
+            <a href="index.html" class="nav_btn">Feeds</a>
+            <i class="fas fa-rss-square" id="i_feed"><a href="sell.html" class="nav_btn">Sell Books </a></i>
+            <i class="fas fa-dollar-sign" id="i_sell"><a href="#" class="nav_btn">Notifications</a></i>
+            <i class="fas fa-bell" id="i_notif"></i>
+            <i class="fas fa-user-circle" id="i_profile" title="Profile"></i>
+            </div>
+         <hr>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <div class="sidenav_text">
+            <i class="fas fa-info-circle"><a href="#">About</a></i></br>
+            <i class="fas fa-file-invoice-dollar"><a href="#">Transactions</a></i></br>
+            <i class="fas fa-sign-out-alt"><a href="#">Log Out</a></i></br>
+        </div>
+      </div>
+
+<div class="left-section">
+    <div class="help">
+        <a href="#help" class="little-help"  onclick="showHelp()">Little Help?</a>
+    </div>
+    <div class="help-pal" id="help_sec">
+        <p>1. Each post may contain one copy of one book</p>
+        <p>2. Look for response on notification tab</p>
+        <p>3. You will be notified via email</p>
+        <p>4. Your default region appears on post</p>
+        <p>5. Check your post clicking Demo button</p>
+    </div>
+    <div class="vertical-menu">
+            <!-- <p class="header">Quick Menu</p> -->
+            <div class="list">
+                <i class="fas fa-sync-alt"><a href="#">Latest</a></i></br>
+                <i class="fas fa-comment"><a href="#">Feedback</a></i></br>
+                <i class="fas fa-user-shield"><a href="#">Report Users</a></i></br>
+                <i class="fas fa-award"><a href="#">Terms and Condiotions</a></i></br>
+            </div>
+          </div> 
+</div>
+
+          <!-- ----------------------------------------------------------------------------- -->
+
+          
+          <div class="palette">
+              <div class="img_class">
+                  <img class="book_img" src="Images/smiley.jpeg">
+              </div>
+              <div class="inputbars">
+                  <p class="header">Sell books, share knowledge</p>
+                  <p class="error" id="Error"></p>
+                  <input type="text" class="name" placeholder="Name of the book" id="Header">*</br>
+                  <input type="text" class="author" placeholder="Author(s)" id="Author">*</br>
+                  <p class="advice">In case of multiple authors, seperate using comma</p>
+                  <input type="text" class="topic" placeholder="What topic is the book on?" id="Topic">*</br>
+                  <input type="text" class="price" placeholder="What price do you expect?" id="Price">*
+                  <p class="img_prompt">Let the buyer see what you're selling, consider uploading an image</p>
+                  <form class="form" action="">
+                    <input type="file" name="pic" accept="image/*" id="img"></br>
+                  </form>
+                  <button class="demo" title="How your post will look" onclick="demo()">Demo</button>
+                  <button class="post" onclick="post()">Post</button>
+              </div>
+            </div>
+
+              <div class="demo_palette">
+                    <div class="demo_img_class">
+                        <img class="demo_book_img" id="demo_Img" src="Images/smiley.jpeg">
+                    </div>
+                    <div class="demo_inputbars">
+                        <b class="demo_header" id="demo_Header">Name of the book</b>
+                        <div class="demo_details">
+                            <i class="fas fa-pen-nib"><p class="demo_author" id="demo_Author">by Some author</p></i>
+                            <i class="fas fa-book-open"><p class="demo_topic" id="demo_Topic">On "TOPIC"</p></i>
+                            <i class="fas fa-dollar-sign"><p class="price" id="demo_Price">lil price</p></i>
+                            <i class="fas fa-user"><p class="user"><a href="#">Hussain Md Safwan</a></p></i>
+                            <i class="fas fa-map-marker-alt"><p class="region" id="demo_Location">Dhaka</p></i>
+                            <button class="demo_buy">Buy</button>
+                        </div>
+                    </div>
+                    <div class="mask" id="Mask"></div>
+                </div>
+
+<!-- Firebase Stuffz -->
+
+<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBzAbhWOZO4G_viKEqdrh7t2xLjPr_Mr_U",
+    authDomain: "bookish-190e8.firebaseapp.com",
+    databaseURL: "https://bookish-190e8.firebaseio.com",
+    projectId: "bookish-190e8",
+    storageBucket: "bookish-190e8.appspot.com",
+    messagingSenderId: "799934830243"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- ------------------- -->
+
+    </body>
+</html>
